@@ -53,4 +53,3 @@ git pull origin dev
 ```
 
 ## 커밋 규칙
-Commit Test

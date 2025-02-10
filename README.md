@@ -1,7 +1,17 @@
 # 망호 웹사이트
 
+## 목차
+- [소개](#소개)
+- [사용 기술](#사용-기술)
+- [프로젝트 개발 환경 설정](#프로젝트-개발-환경-설정)
+- [Branch Merge Flow](#branch-merge-flow)
+- [프로젝트 실행](#프로젝트-실행)
+- [커밋 규칙](#커밋-규칙)
+
+
 ## 소개
 [예시 폴더 구조](https://github.com/mertthesamael/lalasia)
+
 
 ## 사용 기술
 - Next.js 15.1.6
@@ -14,19 +24,12 @@
 - PostCSS ^8
 
 
-## 프로젝트 실행
+# 프로젝트 개발 환경 설정
 ```bash
-git clone https://github.com/MaBongPal/mangho-website/tree/dev
+# 프로젝트 클론
+git clone https://github.com/MaBongPal/mangho-website
 cd mangho-website
 
-npm install # 최초 1회 실행
-npm run dev # 개발 모드 실행
-```
-http://localhost:3000 # 실행 확인
-
-
-## 프로젝트 관리
-```bash
 # 최신 dev 브랜치 가져오기
 git checkout dev
 git pull origin dev
@@ -46,10 +49,35 @@ git push origin feature/이름
 # 병합 완료 후 브랜치 정리
 git checkout dev
 git pull origin dev
-
-# branch는 굳이 삭제할 필요 없음
-# git branch -d feature/이름  # 로컬 feature 브랜치 삭제
-# git push origin --delete feature/이름  # 원격 feature 브랜치 삭제
 ```
 
+
+# Branch Merge Flow
+```mermaid
+graph TD
+    A["feature/이름 (Branch)"]
+    B["feature/이름 (Branch)"]
+    C["dev (Branch)"]
+    D["master (Branch)"]
+
+    A -- "Commit" --> B
+    B -- "PR / Merge" --> C
+    C -- "PR / Merge" --> D
+```
+
+
+## 프로젝트 실행
+```bash
+npm install # 최초 1회 실행
+npm run dev # 개발 모드 실행
+```
+http://localhost:3000 # 실행 확인
+
+
 ## 커밋 규칙
+```bash
+Component 추가
+
+- Primary Button 추가.
+- Secondary Button 추가.
+```

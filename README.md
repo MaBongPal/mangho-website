@@ -4,6 +4,7 @@
 - [소개](#소개)
 - [사용 기술](#사용-기술)
 - [프로젝트 개발 환경 설정](#프로젝트-개발-환경-설정)
+- [Branch Merge Flow](#branch-merge-flow)
 - [프로젝트 실행](#프로젝트-실행)
 - [커밋 규칙](#커밋-규칙)
 
@@ -48,6 +49,20 @@ git push origin feature/이름
 # 병합 완료 후 브랜치 정리
 git checkout dev
 git pull origin dev
+```
+
+
+# Branch Merge Flow
+```mermaid
+graph TD
+    A["feature/이름 (Branch)"]
+    B["feature/이름 (Branch)"]
+    C["dev (Branch)"]
+    D["master (Branch)"]
+
+    A -- "Commit" --> B
+    B -- "PR / Merge" --> C
+    C -- "PR / Merge" --> D
 ```
 
 

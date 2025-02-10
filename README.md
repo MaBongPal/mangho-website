@@ -76,6 +76,7 @@ http://localhost:3000 # 실행 확인
 
 ## 커밋 규칙
 ```bash
+# 예)
 Component 추가
 
 - Primary Button 추가.

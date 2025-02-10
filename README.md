@@ -11,7 +11,10 @@
 
 ## 소개
 [예시 폴더 구조](https://github.com/mertthesamael/lalasia)
-
+<br>
+Vercel 배포 주소: https://mangho-website.vercel.app/
+<br>
+개인 feature -> dev -> master 순으로 PR 병합시 자동 배포
 
 ## 사용 기술
 - Next.js 15.1.6
